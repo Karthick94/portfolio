@@ -1,0 +1,144 @@
+// Tablets & smaller
+@media (max-width: 568px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+
+    // Home page
+
+    .header-home {
+        padding: 0.65rem;
+    }
+
+    #main-nav {
+        flex-direction: column;
+        justify-content: center;
+
+        #logo {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .header-content {
+        h1 {
+            font-size: 2rem;
+        }
+        .btn-light {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    #home {
+        &-a .specialize {
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+        }
+
+        &-b {
+            grid-template-columns: 1fr;
+        }
+
+        &-c .process {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #footer {
+        .footer-content {
+            flex-direction: column;
+        }
+        .social > * {
+            margin-top: 1rem;
+        }
+    }
+
+    #header.header-inner {
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    // About Page
+
+    #about-me {
+        .banner {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+
+            .image {
+                display: block;
+            }
+
+            .details {
+                border-left: unset;
+                border-bottom: 2px solid $main-color;
+            }
+        }
+
+        .awards {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #companies {
+        padding: 1.5rem;
+
+        img {
+            display: block;
+            width: 30%;
+            margin: 1.5rem auto;
+        }
+    }
+
+    #testimonials .comments {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        .comment {
+            display: grid;
+            p:first-child() {
+                grid-row: 2;
+            }
+
+            .client-info {
+                grid-row: 1;
+                padding-bottom: 1rem;
+                // grid-template-columns: 1fr 8fr;
+
+                img {
+                    width: 80%;
+                }
+
+                p {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    // My Work Page
+    #work {
+        .projects {
+            grid-template-columns: 1fr;
+            padding: 2rem;
+        }
+    }
+
+    // Contact Page
+    #contact-me {
+        form {
+            width: 80%;
+        }
+    }
+
+    #contact-mode .container {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}
